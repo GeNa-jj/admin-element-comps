@@ -2,11 +2,15 @@
 
 > 基于vue、element的后台组件、axios配置和一些自定义指令。
 
+```bash
+npm install admin-element-comps
+```
+
 ## AxionsConfig axios配置
 ***如需要500、504、请求超时等错误提示，必须把main.js的vue实例挂住在window.app。如window.app = new Vue({el: '#app',components: { App },template: '\<App/>'})。***
 
 > 用例说明：
-```
+```vue
 main.js
 import {AxionsConfig} from 'admin-element-comps'
 Vue.use(AxionsConfig, axios)
@@ -22,7 +26,7 @@ this.$ajaxForm.post(url, {params}).then(({data}) => { })
 ## Nav 侧边栏
 
 > 用例说明：
-```
+```vue
 import {Nav} from 'admin-element-comps'
 <Nav :routes="navList"></Nav>
 navList: [
@@ -51,7 +55,7 @@ children：二级导航
 ## Pagination 分页
 
 > 用例说明：
-```
+```vue
 import {Pagination} from 'admin-element-comps'
 <Pagination :pageData="pageData" @pageChange="pageChange"></Pagination>
 pageData: {
@@ -74,7 +78,7 @@ layout：需要出现的类型 total, sizes, prev, pager, next, jumper
 ## DragDialog 拖拽Dialog
 
 > 用例说明：
-```
+```vue
 main.js
 import {DragDialog} from 'admin-element-comps'
 Vue.directive('draggable', DragDialog)
