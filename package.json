@@ -1,6 +1,6 @@
 {
   "name": "admin-element-comps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于element的后台组件和axios配置，使用时需要引进element-ui。",
   "author": "lujianjun <lujj@huatugz.com>",
   "private": false,
