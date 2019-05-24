@@ -76,7 +76,7 @@ layout：需要出现的类型 total, sizes, prev, pager, next, jumper
 > 用例说明：
 ```
 main.js
-import DragDialog from 'admin-element-comps'
+import {DragDialog} from 'admin-element-comps'
 Vue.directive('draggable', DragDialog)
 
 使用时：
