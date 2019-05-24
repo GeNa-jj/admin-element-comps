@@ -1,7 +1,7 @@
 {
   "name": "admin-element-comps",
-  "version": "1.0.1",
-  "description": "基于element的后台组件和axios配置，使用时需要引进element-ui。",
+  "version": "1.0.2",
+  "description": "基于vue、element的后台组件、axios配置和一些自定义指令",
   "author": "lujianjun <lujj@huatugz.com>",
   "private": false,
   "main": "src/index.js",
@@ -12,6 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "element-ui": "^2.8.2",
     "vue": "^2.5.2"
   },
   "devDependencies": {
