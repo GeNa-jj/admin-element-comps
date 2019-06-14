@@ -7,7 +7,7 @@ import DragDialog from './directive/el-drag-dialog/index'
 
 if (process.env.NODE_ENV === 'development') {
   let ElementUI = require('element-ui')
-  require('element-ui/lib/theme-chalk/index.css')
+  require('./assets/custom-theme/style.css')
   Vue.use(ElementUI)
 }
 
