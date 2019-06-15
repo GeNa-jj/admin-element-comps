@@ -1,6 +1,6 @@
 {
   "name": "admin-element-comps",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "基于vue、element的后台组件、axios配置和一些自定义指令",
   "author": "lujianjun <lujj@huatugz.com>",
   "private": false,
