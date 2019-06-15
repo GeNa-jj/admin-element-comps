@@ -2,8 +2,8 @@ import './waves.css'
 
 const context = '@@wavesContext'
 
-function handleClick(el, binding) {
-  function handle(e) {
+function handleClick (el, binding) {
+  function handle (e) {
     const customOpts = Object.assign({}, binding.value)
     const opts = Object.assign({
       ele: el, // 波纹作用元素
@@ -32,11 +32,9 @@ function handleClick(el, binding) {
           break
         default:
           ripple.style.top =
-            (e.pageY - rect.top - ripple.offsetHeight / 2 - document.documentElement.scrollTop ||
-              document.body.scrollTop) + 'px'
+            (e.pageY - rect.top - ripple.offsetHeight / 2 - document.documentElement.scrollTop || document.body.scrollTop) + 'px'
           ripple.style.left =
-            (e.pageX - rect.left - ripple.offsetWidth / 2 - document.documentElement.scrollLeft ||
-              document.body.scrollLeft) + 'px'
+            (e.pageX - rect.left - ripple.offsetWidth / 2 - document.documentElement.scrollLeft || document.body.scrollLeft) + 'px'
       }
       ripple.style.backgroundColor = opts.color
       ripple.className = 'waves-ripple z-active'
@@ -56,14 +54,14 @@ function handleClick(el, binding) {
 }
 
 export default {
-  bind(el, binding) {
+  bind (el, binding) {
     el.addEventListener('click', handleClick(el, binding), false)
   },
-  update(el, binding) {
+  update (el, binding) {
     el.removeEventListener('click', el[context].removeHandle, false)
     el.addEventListener('click', handleClick(el, binding), false)
   },
-  unbind(el) {
+  unbind (el) {
     el.removeEventListener('click', el[context].removeHandle, false)
     el[context] = null
     delete el[context]

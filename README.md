@@ -3,7 +3,7 @@
 > 基于vue、element的后台组件、axios配置和一些自定义指令。
 
 ```bash
-npm install admin-element-comps
+npm install admin-element-comps --save
 ```
 
 ## AxionsConfig axios配置
@@ -85,4 +85,28 @@ Vue.directive('draggable', DragDialog)
 
 使用时：
 <el-dialog v-draggable></el-dialog>
+```
+
+## Waves 点击波浪
+
+> 用例说明：
+```vue
+main.js
+import {Waves} from 'admin-element-comps'
+Vue.directive('waves', Waves)
+
+使用时：
+<el-button v-waves></el-button>
+```
+
+## Clipboard 复制
+
+> 用例说明：
+```vue
+main.js
+import {Clipboard} from 'admin-element-comps'
+Vue.directive('clipboard', Clipboard)
+
+使用时：
+<el-button v-waves v-clipboard:copy="test" v-clipboard:success="seccess" type="primary">waves</el-button>
 ```

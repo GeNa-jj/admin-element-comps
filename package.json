@@ -1,6 +1,6 @@
 {
   "name": "admin-element-comps",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "基于vue、element的后台组件、axios配置和一些自定义指令",
   "author": "lujianjun <lujj@huatugz.com>",
   "private": false,
@@ -12,6 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "clipboard": "^2.0.4",
     "element-ui": "^2.9.1",
     "vue": "^2.5.2"
   },
