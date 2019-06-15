@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <DrawDialog></DrawDialog>
+    <Test />
   </div>
 </template>
 
 <script>
-  import DrawDialog from './components/drawDialog'
+  import Test from './components/test'
   export default {
     components: {
-      DrawDialog
+      Test
     }
   }
 </script>

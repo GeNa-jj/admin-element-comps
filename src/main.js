@@ -4,14 +4,16 @@ import Vue from 'vue'
 import App from './App'
 
 import DragDialog from './directive/el-drag-dialog/index'
+import Waves from './directive/waves/index'
 
 if (process.env.NODE_ENV === 'development') {
-  let ElementUI = require('element-ui')
+  const ElementUI = require('element-ui')
   require('./assets/custom-theme/style.css')
   Vue.use(ElementUI)
 }
 
 Vue.directive('draggable', DragDialog)
+Vue.directive('waves', Waves)
 
 Vue.config.productionTip = false
 
